@@ -135,11 +135,12 @@ end
 def team_names
   hash = game_hash
   array = []
+  binding.pry
   hash.each do |location, attributes|
     attributes.each do |attribute, info|
       if attribute == :team_name
         array << info
-        binding.pry
+        
       end
     end
   end
