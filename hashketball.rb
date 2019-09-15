@@ -1,4 +1,4 @@
-
+require "pry"
 
 def game_hash
   hash = {
@@ -123,7 +123,7 @@ def num_points_scored(name)
    hash.each do |location, attributes|
       attributes[:players].each do |attribute, info|
          if attribute == name
-            return data[:points]
+            return info[:points]
          end
       end
    end
