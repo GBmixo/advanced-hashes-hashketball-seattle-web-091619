@@ -124,6 +124,7 @@ def num_points_scored(name)
       attributes[:players].each do |attribute, info|
          if attribute == name
             array << info[:points]
+            p array
          end
       end
    end
