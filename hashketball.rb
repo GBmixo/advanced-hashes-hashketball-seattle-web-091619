@@ -115,7 +115,7 @@ def game_hash
       }
     }
   }
-  p hash[:away][:players]["Bismak Biyombo"]
+  p hash[:away][:players]["Bismak Biyombo"][:points]
 end
   
 def num_points_scored(name)
@@ -130,9 +130,6 @@ def num_points_scored(name)
             
          end
       end
-   end
-   if array.size >= 2
-     puts "aha"
    end
    score = array[-1]
    p score
