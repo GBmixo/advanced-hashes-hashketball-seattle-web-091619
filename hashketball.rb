@@ -115,7 +115,7 @@ def game_hash
       }
     }
   }
-  p hash[:]
+  p hash[:away][:players]["Bismak Biyombo"]
 end
   
 def num_points_scored(name)
