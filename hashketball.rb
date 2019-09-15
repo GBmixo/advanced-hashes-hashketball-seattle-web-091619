@@ -139,6 +139,7 @@ def team_names
     attributes.each do |attribute, info|
       if attribute == :team_name
         array << info
+        binding.pry
       end
     end
   end
