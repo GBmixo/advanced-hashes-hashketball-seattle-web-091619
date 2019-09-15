@@ -130,7 +130,7 @@ def num_points_scored(name)
       end
    end
    score = array[-1]
-   p score
+   return score
 end
 
 def shoe_size(name)
@@ -145,7 +145,7 @@ def shoe_size(name)
       end
    end
    score = array[-1]
-   p score
+   return score
 end
 
 def team_names
