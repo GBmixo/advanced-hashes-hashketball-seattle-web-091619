@@ -127,7 +127,7 @@ def num_points_scored(name)
          end
       end
    end
-   p array
+   p pts
 end
 
 def team_names
