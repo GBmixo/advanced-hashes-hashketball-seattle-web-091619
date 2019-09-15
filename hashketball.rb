@@ -139,7 +139,7 @@ def team_names
   hash.each do |location, attributes|
     attributes.each do |attribute, info|
       if attribute == :team_name
-        array << info
+        array[0] << info
         
       end
     end
