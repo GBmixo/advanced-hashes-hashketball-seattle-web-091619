@@ -119,13 +119,28 @@ def game_hash
 end
   
 def num_points_scored(name)
-  p name
+  #p name
   hash = game_hash
   array = []
    hash.each do |location, attributes|
       attributes[:players].each do |attribute, info|
          if attribute == name
             array << info[:points]
+         end
+      end
+   end
+   score = array[-1]
+   p score
+end
+
+def num_points_scored(name)
+  #p name
+  hash = game_hash
+  array = []
+   hash.each do |location, attributes|
+      attributes[:players].each do |attribute, info|
+         if attribute == name
+            array << info[:shoe]
          end
       end
    end
