@@ -122,6 +122,7 @@ def num_points_scored(name)
   array = []
    hash.each do |location, attributes|
       attributes[:players].each do |attribute, info|
+        p attribute
          if attribute == name
             return info[:points]
          end
