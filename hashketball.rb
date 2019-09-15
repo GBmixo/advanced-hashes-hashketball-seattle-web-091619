@@ -119,15 +119,15 @@ end
   
 def num_points_scored(name)
   hash = game_hash
-  pts = nil
+  @pts = nil
    hash.each do |location, attributes|
       attributes[:players].each do |attribute, info|
          if attribute == name
-            pts = info[:points]
+            @pts = info[:points]
          end
       end
    end
-   p pts
+   p @pts
 end
 
 def team_names
