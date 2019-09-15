@@ -123,12 +123,12 @@ def num_points_scored(name)
    hash.each do |location, attributes|
       attributes[:players].each do |attribute, info|
          if attribute == name
-            array[0] << info[:points]
+            array[] << info[:points]
             p array
          end
       end
    end
-   score = array[0]
+   score = array[-1]
    p score
 end
 
