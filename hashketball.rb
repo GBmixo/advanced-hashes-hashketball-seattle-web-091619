@@ -115,6 +115,7 @@ def game_hash
       }
     }
   }
+  p hash[:]
 end
   
 def num_points_scored(name)
