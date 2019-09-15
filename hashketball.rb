@@ -125,7 +125,7 @@ def num_points_scored(name)
         p attribute
         p info
          if attribute == name
-            return info[:points]
+            array << info[:points]
          end
       end
    end
