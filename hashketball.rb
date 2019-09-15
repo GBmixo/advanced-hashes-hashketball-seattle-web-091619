@@ -119,11 +119,11 @@ end
   
 def num_points_scored(name)
   hash = game_hash
-  array = []
+  pts = nil
    hash.each do |location, attributes|
       attributes[:players].each do |attribute, info|
          if attribute == name
-            array << info[:points]
+            pts << info[:points]
          end
       end
    end
