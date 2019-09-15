@@ -115,7 +115,7 @@ def game_hash
       }
     }
   }
-  p hash[:away][:players]["Bismak Biyombo"][:points]
+  #p hash[:away][:players]["Bismak Biyombo"][:points]
 end
   
 def num_points_scored(name)
@@ -124,10 +124,8 @@ def num_points_scored(name)
   array = []
    hash.each do |location, attributes|
       attributes[:players].each do |attribute, info|
-        
          if attribute == name
             array << info[:points]
-            
          end
       end
    end
